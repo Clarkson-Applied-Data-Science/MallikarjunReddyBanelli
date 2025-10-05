@@ -40,7 +40,7 @@ This metric provides a realistic measure of typical taxi trip lengths across New
 
 ---------
 
-# Answers to Questions Asked Are as Follows:
+## Analytical Responses to All Questions
 
 ## 1. What datetime range does your data cover? How many rows are there total?
 
