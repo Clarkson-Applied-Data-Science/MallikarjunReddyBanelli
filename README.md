@@ -1,4 +1,4 @@
-# NYC Taxi Trip Data Analysis
+# Exploratory Data Analysis of NYC Taxi Trips
 **Author:** Mallikarjun Reddy Banelli  
 **Course:** IA626 — Big Data Analytics  
 **Dataset:** `trip_data_2.csv`  
@@ -13,10 +13,9 @@ The purpose of this analysis is to understand key operational insights from the 
 
 --------
 
-## The Thought Process
-
-The Python modules used in this project are intentionally limited to `csv`, `datetime`, `math`, `random`, and `matplotlib` (for visualization).  
-The entire analysis avoids the use of advanced libraries such as Pandas or Spark to demonstrate how large datasets can still be processed efficiently using only basic tools.
+## Methodology
+The analysis was performed using lightweight Python modules — csv, datetime, math, and random — to handle data extraction and transformation.
+Visualization and plotting were achieved using matplotlib, enabling clear graphical representation of trip and passenger trends. 
 
 ### Step 1: Reading the Dataset  
 In the first step, the dataset was accessed using a simple `with open()` statement in read mode.  
