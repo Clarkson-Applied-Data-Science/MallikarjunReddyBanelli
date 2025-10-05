@@ -72,7 +72,7 @@ This metric provides a realistic measure of typical taxi trip lengths across New
 
 Below are sample records extracted from the dataset (`trip_data_2.csv`):
 
- Field Names:
+ ## Field Names:
 ['medallion', 'hack_license', 'vendor_id', 'rate_code', 'store_and_fwd_flag', 'pickup_datetime', 'dropoff_datetime', 'passenger_count', 'trip_time_in_secs', 'trip_distance', 'pickup_longitude', 'pickup_latitude', 'dropoff_longitude', 'dropoff_latitude']
 
  Sample Data Rows :
@@ -157,7 +157,7 @@ It helps to understand data diversity and detect possible anomalies or inconsist
 | **store_and_fwd_flag** | ['N', 'Y'] | Shows whether the trip record was temporarily stored before transmission — Y = Yes, N = No. |
 | **passenger_count** | ['0', '1', '2', '3', '4', '5', '6'] | Displays the number of passengers in the taxi. Most common values are 1–2, while higher counts are rare. |
 
- Summary
+ ## Summary
 These categorical fields describe trip-level attributes such as vendor type, fare category, and passenger load.  
 Most rides were operated by **CMT**, with typical **rate_code = 1** (standard fare) and **passenger_count = 1**.
 
@@ -166,7 +166,7 @@ Most rides were operated by **CMT**, with typical **rate_code = 1** (standard fa
 This analysis identifies the minimum and maximum values for the key numeric fields in the dataset — excluding latitude and longitude.  
 These fields (trip distance, duration, and passenger count) help describe ride characteristics and variability within New York City taxi trips.
 
- Min/Max Values (sampled):
+ ## Min/Max Values (sampled):
 
 | Field Name | Minimum | Maximum | Description |
 |-------------|----------|----------|--------------|
@@ -174,12 +174,12 @@ These fields (trip distance, duration, and passenger count) help describe ride c
 | **trip_time_in_secs** | 0.0 | 9120.0 | Total trip duration in seconds (up to ~2.5 hours). Shorter trips are most frequent, typically lasting between 5 to 20 minutes. |
 | **passenger_count** | 0.0 | 6.0 | Indicates the number of passengers per trip. The most common counts are 1 or 2 passengers, matching typical NYC taxi rides. |
 
- Observations:
+ ## Observations:
 - A few records have **zero distance or time**, possibly due to cancelled or faulty trip entries.
 - **Outliers** (extremely long trips) are rare but likely represent trips outside NYC (e.g., to airports or nearby cities).
 - The **passenger count** field confirms that taxis usually serve **individual riders or small groups**.
 
- Summary:
+ ## Summary:
 Most New York City taxi trips are short-distance rides covering less than 5 miles and lasting around 15 minutes.  
 The data distribution aligns with common commuter and tourist travel patterns, highlighting the dense, fast-paced mobility within the city.
 
@@ -191,13 +191,13 @@ Each trip’s `pickup_datetime` was used to extract the hour of the day (0–23)
 
 ![Average Passengers by Hour](images/AvgPassengerByHourFullData.png)
 
-Observations:
+## Observations:
 - Passenger counts remain fairly consistent throughout the day, averaging between **2.0 and 2.25 passengers per trip**.  
 - A slight increase between **2 AM – 4 AM** could be due to shared or late-night rides (airport transfers or nightlife).  
 - A dip near **9 AM – 10 AM** reflects single-commuter business trips.  
 - Evening hours stabilize again as both solo and shared rides occur.
 
- Summary:
+ ## Summary:
 The chart indicates that most New York City taxi trips carry **1–2 passengers**, showing minimal variation across different hours of the day, which aligns with common urban travel behavior.
 
 ## 10. Create a new CSV file which has only one out of every thousand rows.
@@ -215,7 +215,7 @@ After creating the sampled dataset (`trip_data_2_sample.csv`), the same analysis
 
 The resulting chart was then compared with the full dataset’s hourly averages to observe differences caused by sampling.
 
- Observations:
+ ## Observations:
 - The **overall trend** between both datasets remains consistent, showing similar hourly patterns.
 - However, the **sampled dataset** shows **more variation** due to reduced data volume.
 - This confirms that while sampling reduces data size efficiently, it may slightly affect statistical precision.
