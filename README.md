@@ -128,7 +128,7 @@ Below are sample records extracted from the dataset (`trip_data_2.csv`):
 ### a. Plot this (approximately on a map)
 The plot below visualizes the approximate pickup and dropoff distribution of New York City taxi trips from the dataset.
 
-![Trip Range Map](images/tripRange.png)
+![Trip Range Map](images/GeographicalRange.png)
 
 ## 6. What is the average overall computed trip distance? (You should use Haversine Distance)
 
