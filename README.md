@@ -2,7 +2,7 @@
 **Author:** Mallikarjun Reddy Banelli  
 **Course:** IA626 — Big Data Analytics  
 **Dataset:** `trip_data_2.csv`  
-**Institution:** [Mallikarjun Reddy Banelli] 
+**Institution:** [Clarkson University] 
 
 ## Assignment Overview
 
