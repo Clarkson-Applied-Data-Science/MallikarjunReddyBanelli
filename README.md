@@ -1,6 +1,6 @@
 # Exploratory Data Analysis of NYC Taxi Trips
 **Author:** Mallikarjun Reddy Banelli  
-**Course:** IA626 — Big Data Analytics  
+**Course:** IA626 — Big Data Processing And Cloud Services 
 **Dataset:** `trip_data_2.csv`  
 **Institution:** [Clarkson University] 
 
